@@ -144,11 +144,14 @@ var Images = (_temp = _class = function (_Component) {
       return false;
     }
 
-    return [React.createElement('div', { key: 'cover-' + id, className: 'cover slide', style: { backgroundColor: overlayBackgroundColor } }), React.createElement(
-      'div',
-      { key: 'cover-text-' + id, className: 'cover-text slide animate-text', style: { fontSize: '100%' } },
-      renderOverlay()
-    )];
+    return [];
+    // remove overlay
+    // return [
+    //   <div key={`cover-${id}`} className="cover slide" style={{backgroundColor: overlayBackgroundColor}}></div>,
+    //   <div key={`cover-text-${id}`} className="cover-text slide animate-text"  style={{fontSize: '100%'}}>
+    //     {renderOverlay()}
+    //   </div>
+    // ]
   };
 
   Images.prototype.renderCountOverlay = function renderCountOverlay(more) {

@@ -106,12 +106,14 @@ class Images extends Component {
       return false
     }
 
-    return [
-      <div key={`cover-${id}`} className="cover slide" style={{backgroundColor: overlayBackgroundColor}}></div>,
-      <div key={`cover-text-${id}`} className="cover-text slide animate-text"  style={{fontSize: '100%'}}>
-        {renderOverlay()}
-      </div>
-    ]
+    return [];
+    // remove overlay
+    // return [
+    //   <div key={`cover-${id}`} className="cover slide" style={{backgroundColor: overlayBackgroundColor}}></div>,
+    //   <div key={`cover-text-${id}`} className="cover-text slide animate-text"  style={{fontSize: '100%'}}>
+    //     {renderOverlay()}
+    //   </div>
+    // ]
   }
 
   renderCountOverlay(more) {
