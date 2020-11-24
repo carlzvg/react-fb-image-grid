@@ -11,7 +11,7 @@ import { Image, Grid, Row, Col } from 'react-bootstrap';
 import Modal from './Modal';
 import PropTypes from 'prop-types';
 
-import "core-js/features/array/includes";
+import 'core-js/features/array/includes';
 
 var Images = (_temp = _class = function (_Component) {
   _inherits(Images, _Component);

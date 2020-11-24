@@ -3,7 +3,7 @@ import { Image, Grid, Row, Col } from 'react-bootstrap';
 import Modal from './Modal'
 import PropTypes from 'prop-types';
 
-import "@pnp/polyfill-ie11";
+import 'core-js/features/array/includes'
 
 class Images extends Component {
   static defaultProps = {
