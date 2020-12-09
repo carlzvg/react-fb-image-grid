@@ -2,7 +2,9 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css';
 
 .grid-container img {
-  width: 100%;
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .grid-container .row {
