@@ -91,14 +91,30 @@ var Images = (_temp = _class = function (_Component) {
         React.createElement(
           Col,
           { xs: 6, md: 6, onClick: this.openModal.bind(this, conditionalRender ? 1 : 0) },
-          React.createElement(Image, { src: '' + (conditionalRender ? images[1] : images[0]) }),
-          this.renderOverlay()
+          React.createElement(
+            'div',
+            { className: 'ratio-frame' },
+            React.createElement(
+              'div',
+              { className: 'ratio-frame-wrapper' },
+              React.createElement(Image, { src: '' + (conditionalRender ? images[1] : images[0]) }),
+              this.renderOverlay()
+            )
+          )
         ),
         React.createElement(
           Col,
           { xs: 6, md: 6, onClick: this.openModal.bind(this, conditionalRender ? 2 : 1) },
-          React.createElement(Image, { src: '' + (conditionalRender ? images[2] : images[1]) }),
-          overlay
+          React.createElement(
+            'div',
+            { className: 'ratio-frame' },
+            React.createElement(
+              'div',
+              { className: 'ratio-frame-wrapper' },
+              React.createElement(Image, { src: '' + (conditionalRender ? images[2] : images[1]) }),
+              overlay
+            )
+          )
         )
       )
     );
@@ -120,20 +136,44 @@ var Images = (_temp = _class = function (_Component) {
         React.createElement(
           Col,
           { xs: 6, md: 4, onClick: this.openModal.bind(this, conditionalRender ? 1 : 2) },
-          React.createElement(Image, { src: '' + (conditionalRender ? images[1] : images[2]) }),
-          this.renderOverlay(conditionalRender ? 1 : 2)
+          React.createElement(
+            'div',
+            { className: 'ratio-frame' },
+            React.createElement(
+              'div',
+              { className: 'ratio-frame-wrapper' },
+              React.createElement(Image, { src: '' + (conditionalRender ? images[1] : images[2]) }),
+              this.renderOverlay(conditionalRender ? 1 : 2)
+            )
+          )
         ),
         React.createElement(
           Col,
           { xs: 6, md: 4, onClick: this.openModal.bind(this, conditionalRender ? 2 : 3) },
-          React.createElement(Image, { src: '' + (conditionalRender ? images[2] : images[3]) }),
-          this.renderOverlay(conditionalRender ? 2 : 3)
+          React.createElement(
+            'div',
+            { className: 'ratio-frame' },
+            React.createElement(
+              'div',
+              { className: 'ratio-frame-wrapper' },
+              React.createElement(Image, { src: '' + (conditionalRender ? images[2] : images[3]) }),
+              this.renderOverlay(conditionalRender ? 2 : 3)
+            )
+          )
         ),
         React.createElement(
           Col,
           { xs: 6, md: 4, onClick: this.openModal.bind(this, conditionalRender ? 3 : 4) },
-          React.createElement(Image, { src: '' + (conditionalRender ? images[3] : images[4]) }),
-          overlay
+          React.createElement(
+            'div',
+            { className: 'ratio-frame' },
+            React.createElement(
+              'div',
+              { className: 'ratio-frame-wrapper' },
+              React.createElement(Image, { src: '' + (conditionalRender ? images[3] : images[4]) }),
+              overlay
+            )
+          )
         )
       )
     );

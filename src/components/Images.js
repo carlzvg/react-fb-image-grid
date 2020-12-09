@@ -72,12 +72,20 @@ class Images extends Component {
     return <Grid>
       <Row>
         <Col xs={6} md={6} onClick={this.openModal.bind(this, conditionalRender ? 1 : 0)}>
-          <Image src={`${conditionalRender ? images[1] : images[0]}`}/>
-          {this.renderOverlay()}
+          <div className="ratio-frame">
+            <div className="ratio-frame-wrapper">
+              <Image src={`${conditionalRender ? images[1] : images[0]}`}/>
+              {this.renderOverlay()}
+            </div>
+          </div>
         </Col>
         <Col xs={6} md={6} onClick={this.openModal.bind(this, conditionalRender ? 2 : 1)}>
-          <Image src={`${conditionalRender ? images[2] : images[1]}`}/>
-          {overlay}
+          <div className="ratio-frame">
+            <div className="ratio-frame-wrapper">
+              <Image src={`${conditionalRender ? images[2] : images[1]}`}/>
+              {overlay}
+            </div>
+          </div>
         </Col>
       </Row>
     </Grid>;
@@ -92,16 +100,28 @@ class Images extends Component {
     return <Grid>
       <Row>
         <Col xs={6} md={4} onClick={this.openModal.bind(this, conditionalRender ? 1 : 2)}>
-          <Image src={`${conditionalRender ? images[1] : images[2]}`}/>
-          {this.renderOverlay(conditionalRender ? 1 : 2)}
+          <div className="ratio-frame">
+            <div className="ratio-frame-wrapper">
+              <Image src={`${conditionalRender ? images[1] : images[2]}`}/>
+              {this.renderOverlay(conditionalRender ? 1 : 2)}
+            </div>
+          </div>
         </Col>
         <Col xs={6} md={4} onClick={this.openModal.bind(this, conditionalRender ? 2 : 3)}>
-          <Image src={`${conditionalRender ? images[2] : images[3]}`}/>
-          {this.renderOverlay(conditionalRender ? 2 : 3)}
+          <div className="ratio-frame">
+            <div className="ratio-frame-wrapper">
+              <Image src={`${conditionalRender ? images[2] : images[3]}`}/>
+              {this.renderOverlay(conditionalRender ? 2 : 3)}
+            </div>
+          </div>
         </Col>
         <Col xs={6} md={4} onClick={this.openModal.bind(this, conditionalRender ? 3 : 4)}>
-          <Image src={`${conditionalRender ? images[3] : images[4]}`}/>
-          {overlay}
+          <div className="ratio-frame">
+            <div className="ratio-frame-wrapper">
+              <Image src={`${conditionalRender ? images[3] : images[4]}`}/>
+              {overlay}
+            </div>
+          </div>
         </Col>
       </Row>
     </Grid>;

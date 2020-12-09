@@ -110,3 +110,18 @@
 .border:hover .animate-text  {
   top: 62%
 }
+
+.ratio-frame {
+  padding-top: 75%;
+}
+
+.ratio-frame-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
