@@ -1,12 +1,6 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css';
 
-.grid-container img {
-  object-fit: contain;
-  max-height: 100%;
-  max-width: 100%;
-}
-
 .grid-container .row {
   display: flex;
   align-items: center;
@@ -126,4 +120,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.ratio-frame-wrapper img {
+  object-fit: contain;
+  font-family: "object-fit: contain;";
+  max-height: 100%;
+  max-width: 100%;
 }
